@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boost</title>
+    <link rel="icon" type="image/png" href="assets/car.png">
+    <link rel="stylesheet" href="assets/step3_scroll.css">
+    <link rel="stylesheet" href="assets/step3_style.css">
+    <script defer src="assets/step3_script.js"></script>
+</head>
+<body>
+    <!-- Header at the top -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Clickable brand image for homepage -->
+            <a href="../index.html">
+                <img src="assets/BackToTheFridge.png" class="brand" alt="Back to the Fridge">
+            </a>
+            <!-- Mini Timeline with clickable links -->
+            <div class="mini-timeline">
+                <a href="../step1/public/step1.html" class="mini-step completed">The Warning</a>
+                <div class="mini-line"></div>
+                <a href="../step2/step2.html" class="mini-step completed">The Mission</a>
+                <div class="mini-line"></div>
+                <a href="step3.html" class="mini-step active step3">The Boost</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for form and nutrition data -->
+    <section class="main-section step3">
+        <div class="left-section">
+            <!-- Title with image next to it -->
+            <div class="title-container">
+                <h1 class="main-title">NutriBoost</h1>
+                <img src="assets/Target.png" alt="Nutrition Icon" class="title-icon">
+            </div>
+
+            <img src="assets/Nutrition.png" alt="Below NutriBoost Image" class="below-title-icon">
+
+            <!-- Form to enter food items -->
+            <form id="nutrition-form">
+                <label for="food-item">Enter food items (e.g., 3 tomato, 1 cup rice, 10 oz steak):</label>
+                <textarea id="food-item" rows="3" placeholder="e.g., 3 tomato, 1 cup rice, 10 oz steak"></textarea>
+                <div class="button-container">
+                    <button type="submit" class="calc-btn">Analyze</button>
+                </div>
+            </form>
+
+            <!-- Display individual food items in a table -->
+            <div class="food-table-container">
+                <h3>Individual Food Items</h3>
+                <table id="food-table">
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Food</th>
+                            <th>Calories</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Individual food items will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Right section for Total Nutrition Facts -->
+        <div class="right-section">
+            <div class="nutrition-facts-container" id="nutrition-facts">
+                <h2 class="nutrition-facts-title">NutriBoost</h2>
+                <div class="nutrition-section">
+                </div>
+            </div>
+        </div>        
+    </section>
+</body>
+</html>

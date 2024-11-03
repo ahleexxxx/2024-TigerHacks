@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Warning</title>
+    <link rel="icon" type="image/png" href="car.png">
+    <link rel="stylesheet" href="step1_scroll.css">
+    <link rel="stylesheet" href="step1_style.css">
+    <script defer src="step1_script.js"></script>
+</head>
+<body>
+    <!-- Header at the top -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Clickable brand image for homepage -->
+            <a href="../../index.html">
+                <img src="BackToTheFridge.png" class="brand" alt="Back to the Fridge">
+            </a>
+            <!-- Mini Timeline with clickable links -->
+            <div class="mini-timeline">
+                <a href="step1.html" class="mini-step active">The Warning</a>
+                <div class="mini-line"></div>
+                <a href="../../step2/step2.html" class="mini-step">The Mission</a>
+                <div class="mini-line"></div>
+                <a href="../../step3/step3.html" class="mini-step">The Boost</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for form, receipt, and newspaper -->
+    <section class="main-section">
+        <div class="left-section">
+            <img src="FoodWaste.png" class="foodwaste" alt="Food Waste Icon">
+            
+            <!-- Food Waste Calculator Form -->
+            <form id="foodWasteForm">
+                <div class="form-group">
+                    <input type="text" id="foodItem" placeholder="Food Item (e.g., Milk)" required>
+                    <input type="number" id="quantity" placeholder="Quantity (kg)" min="0" step="0.1" required>
+                    <input type="number" id="cost" placeholder="Cost ($)" min="0" step="0.01" required>
+                </div>
+                <button type="submit" class="calc-btn">Calculate Food Waste</button>
+            </form>
+
+            <!-- Food Waste Receipt Section -->
+            <div id="receipt" class="receipt">
+                <h2>Food Waste Receipt</h2>
+                <ul id="receiptList"></ul>
+                <div class="total">
+                    <p><strong>Total Waste:</strong> <span id="totalWaste">0 kg</span></p>
+                    <p><strong>Total Cost:</strong> <span id="totalCost">$0.00</span></p>
+                </div>
+            </div>
+
+            <button id="calculateImpactButton" class="calc-btn">Calculate Environmental Impact</button>
+            <div id="impactResults" style="display: none;">
+                <h3>Environmental Impact</h3>
+                <p><strong>Greenhouse Gas Emission:</strong> <span id="ghgEmission">0 kg CO₂</span></p>
+                <p><strong>Water Usage:</strong> <span id="waterUsage">0 L</span></p>
+                <p><strong>Land Use:</strong> <span id="landUse">0 m²</span></p>
+                <p><strong>Energy Consumption:</strong> <span id="energyConsumption">0 kWh</span></p>
+            </div>
+        </div>
+
+        <!-- Right section for Newspaper -->
+        <div class="right-section">
+            <div class="button-container">
+                <button id="generateButton" class="news-btn"></button>
+                <div id="newsPrompt" class="news-prompt">
+                    A newspaper has arrived from the future!<br>
+                    Press the button to activate the time machine.
+                </div>
+            </div>
+            <!-- Newspaper container -->
+            <div id="newsContainer" style="display:none;"></div>
+
+            <div id="story">
+                <!-- Future newspaper content will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

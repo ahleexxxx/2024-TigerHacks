@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mission</title>
+    <link rel="icon" type="image/png" href="assets/car.png">
+    <link rel="stylesheet" href="assets/step2_scroll.css">
+    <link rel="stylesheet" href="assets/step2_style.css">
+</head>
+<body>
+    <!-- Header at the top -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Clickable brand image for homepage -->
+            <a href="../index.html">
+                <img src="assets/BackToTheFridge.png" class="brand" alt="Back to the Fridge">
+            </a>
+            <!-- Mini Timeline with clickable links -->
+            <div class="mini-timeline">
+                <a href="../step1/public/step1.html" class="mini-step completed">The Warning</a>
+                <div class="mini-line"></div>
+                <a href="step2.html" class="mini-step active">The Mission</a>
+                <div class="mini-line"></div>
+                <a href="../step3/step3.html" class="mini-step">The Boost</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for form and search results -->
+    <section>
+        <div class="container initial">
+            <lottie-player src="https://lottie.host/ca01230d-7498-4753-a118-ed9594511392/EMhe8rYNoK.json" background="transparent" speed="1" style="height: 200px;" loop autoplay></lottie-player>
+            <form>
+                <input type="text" placeholder="What's About to Expire in Your Fridge?">
+                <lottie-player src="https://lottie.host/b3ca2198-92c9-4490-a719-dc4334d98b95/qCBaff2844.json" mode="bounce" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+            </form>
+            <div class="search-result">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/step2_script.js"></script>
+</body>
+</html>
