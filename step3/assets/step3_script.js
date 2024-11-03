@@ -35,7 +35,7 @@ document.getElementById('nutrition-form').addEventListener('submit', function(e)
       fetch(url)
           .then(response => response.json())
           .then(data => {
-              // Display individual item in the table
+              
               if (data.calories) {
                   addFoodItemToTable(trimmedFoodItem, data);
 

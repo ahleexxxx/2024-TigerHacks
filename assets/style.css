@@ -5,21 +5,7 @@
   box-sizing: border-box;
 }
 
-/* body {
-  font-family: "Nunito", sans-serif;
-  background: linear-gradient(135deg, #ff6bcb, #6c63ff, #48c6ef, #9c27b0, #ff8a65);
-  background-size: 600% 600%;
-  animation: vibrantLightningBackground 10s ease-in-out infinite;
-  color: #fff;
-  text-align: center;
-}
-@keyframes vibrantLightningBackground {
-  0% { background-position: 0% 50%; filter: brightness(1.4); }
-  25% { background-position: 25% 75%; filter: brightness(1.6); }
-  50% { background-position: 100% 50%; filter: brightness(1.8); }
-  75% { background-position: 75% 25%; filter: brightness(1.6); }
-  100% { background-position: 0% 50%; filter: brightness(1.4); }
-} */
+
 
 body::before {
   content: '';
@@ -31,11 +17,11 @@ body::before {
   background: linear-gradient(135deg, #ff6bcb, #6c63ff, #48c6ef, #9c27b0, #ff8a65);
   background-size: 600% 600%;
   animation: vibrantLightningBackground 10s ease-in-out infinite;
-  filter: brightness(1.4); /* Adjust the brightness here */
+  filter: brightness(1.4);
   z-index: -1;
 }
 
-/* Remove the filter from @keyframes if it's only needed for background */
+
 @keyframes vibrantLightningBackground {
   0% { background-position: 0% 50%; }
   25% { background-position: 25% 75%; }
@@ -69,8 +55,8 @@ body::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 80px; /* Adjust the size as needed */
-  animation: moveCar 20s ease-in-out infinite; /* Adjust duration as needed */
+  width: 80px; 
+  animation: moveCar 20s ease-in-out infinite;
 }
 
 @keyframes moveCar {
@@ -78,7 +64,7 @@ body::before {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(calc(100vw - 100px)); /* Adjust 100px to the car's width */
+    transform: translateX(calc(100vw - 100px)); 
   }
   100% {
     transform: translateX(0);
@@ -90,7 +76,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px; /* Padding for fixed header */
+  padding-top: 120px; 
   position: relative;
   width: 80%;
   max-width: 800px;
@@ -112,7 +98,7 @@ body::before {
 .timeline-line::after {
   content: '';
   position: absolute;
-  bottom: -10px; /* Adjust to position arrow correctly */
+  bottom: -10px; 
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   width: 10px;
@@ -147,31 +133,31 @@ body::before {
       transform: translateY(-50%);
   }
   50% {
-      transform: translateY(-40%); /* Move up */
+      transform: translateY(-40%);
   }
   100% {
-      transform: translateY(-50%); /* Return to original position */
+      transform: translateY(-50%);
   }
 }
 
 
 .timeline-image {
-  width: 200px; /* Adjust size as needed */
+  width: 200px;
   height: auto;
-  filter: none; /* This removes any inherited filter effects */
+  filter: none; 
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  animation: float 2s ease-in-out infinite; /* Adjust duration as needed */
+  animation: float 2s ease-in-out infinite;
 }
 
-/* Position the image depending on odd/even item */
+
 .timeline-item:nth-child(odd) .timeline-image {
-  right: -250px; /* Adjust position to keep it aligned next to the connector line */
+  right: -250px; 
 }
 
 .timeline-item:nth-child(even) .timeline-image {
-  left: -250px; /* Adjust position for even items */
+  left: -250px; 
 }
 
 .timeline-item:nth-child(odd) {
@@ -231,7 +217,7 @@ body::before {
   text-align: center;
 }
 
-/* Neon yellow-green gradient button with refined glow on hover */
+
 .timeline-btn {
   display: inline-block;
   padding: 15px 30px;
@@ -248,17 +234,17 @@ body::before {
 
 .timeline-btn:hover {
   background: linear-gradient(135deg, #ffffa1, #baff00);
-  color: #0d0d0d; /* Darker text on hover */
+  color: #0d0d0d; 
   box-shadow: 0px 0px 20px rgba(255, 255, 100, 0.8), 0px 0px 25px rgba(0, 255, 108, 0.7);
 }
 
-/* Robotic-style description text */
+
 .timeline-description {
-  font-family: 'Orbitron', sans-serif; /* Use 'Roboto Mono' or any robotic font of your choice */
+  font-family: 'Orbitron', sans-serif; 
   font-size: 1rem;
   color: #e5f5c3;
   line-height: 1.6;
   max-width: 500px;
   margin: 0 auto;
-  letter-spacing: 0.5px; /* Slightly spaced out letters for a robotic feel */
+  letter-spacing: 0.5px; 
 }

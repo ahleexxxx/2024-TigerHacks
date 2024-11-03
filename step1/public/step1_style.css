@@ -49,7 +49,7 @@ img {
   .header-content {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between image and mini timeline */
+    gap: 20px; 
   }
   
   .brand {
@@ -88,7 +88,7 @@ img {
   }
   
 
-/* Dynamic Moving Gradient Background for Main Content */
+
 @keyframes moveGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -110,7 +110,7 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
-/* Futuristic Glow and Hover Effects for Left and Right Sections */
+
 .left-section, .right-section {
   width: 48%;
   display: flex;
@@ -133,24 +133,24 @@ img {
   background: rgba(50, 70, 120, 0.8);
 }
 
-/* Container for generator button and news prompt */
+
 .right-section .button-container {
   display: flex;
   align-items: center;
-  gap: 30px; /* Space between button and prompt */
+  gap: 30px; 
 }
 
 .news-prompt {
-  font-family: "Courier New", monospace; /* More readable, technical font */
-  color: #00FF00; /* Green color */
-  background-color: rgba(255, 255, 255, 0.15); /* Light, frosted effect */
+  font-family: "Courier New", monospace;
+  color: #00FF00;
+  background-color: rgba(255, 255, 255, 0.15); 
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6); /* Green glow effect */
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6); 
   border: 1px solid rgba(0, 255, 0, 0.4);
   text-shadow: 0px 0px 6px rgba(0, 255, 0, 0.8);
 }
@@ -163,7 +163,7 @@ img {
   box-shadow: 0 6px 20px rgba(0, 0, 50, 0.5);
 }
 
-/* Glow Effect and Animation for Buttons */
+
 .calc-btn {
   padding: 10px 20px;
   background: #4a7cbb;
@@ -183,7 +183,7 @@ img {
   box-shadow: 0px 0px 15px rgba(107, 157, 245, 0.8), 0px 0px 20px rgba(107, 157, 245, 0.4);
 }
 
-/* Pulse Animation for Buttons */
+
 @keyframes pulseGlow {
   0%, 100% { box-shadow: 0px 0px 10px rgba(74, 124, 187, 0.6); }
   50% { box-shadow: 0px 0px 20px rgba(107, 157, 245, 0.8); }
@@ -193,16 +193,15 @@ img {
   animation: pulseGlow 3s infinite;
 }
 
-/* Glow Effect and Animation for News Button */
-/* Glow Effect and Animation for Buttons */
+
 .news-btn {
-  width: 100px; /* Adjust to control button size */
+  width: 100px; 
   height: 100px;
-  background: #b55b5b; /* Red-ish background */
+  background: #b55b5b; 
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 50%; /* Circular shape */
+  border-radius: 50%; 
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -219,7 +218,7 @@ img {
 .news-btn::before {
   content: '';
   position: absolute;
-  width: 200%; /* Larger than button for the animation */
+  width: 200%; 
   height: 200%;
   background: rgba(231, 6, 6, 0.695);
   border-radius: 50%;
@@ -228,7 +227,7 @@ img {
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease;
   z-index: 1;
-  filter: blur(15px); /* Glow effect */
+  filter: blur(15px);
 }
 
 .news-btn:hover::before {
@@ -301,52 +300,52 @@ input {
 }
 
 .newspaper {
-    background-color: #f9f9f9; /* Lighter background for a cleaner look */
-    border: 1px solid #ccc; /* Soft border for definition */
-    padding: 20px; /* Spacing within the newspaper */
-    margin: 20px 0; /* Spacing outside the newspaper */
-    border-radius: 5px; /* Slightly rounded corners */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    font-family: 'Georgia', serif; /* Classic newspaper font */
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    font-family: 'Georgia', serif;
 }
 
 .headline {
-    font-size: 26px; /* Larger headline */
-    color: #333; /* Darker color for visibility */
-    font-weight: bold; /* Bold for emphasis */
-    margin-bottom: 10px; /* Space below the headline */
-    border-bottom: 2px solid #ccc; /* Underline the headline */
-    padding-bottom: 5px; /* Padding below the headline */
+    font-size: 26px; 
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
 .date {
-    font-size: 18px; /* Slightly larger date */
-    color: #666; /* Softer color for a subtle look */
-    margin-bottom: 15px; /* Space below the date */
-    font-style: italic; /* Italic for differentiation */
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px; 
+    font-style: italic; 
 }
 
 .story {
-    font-size: 16px; /* Standard readable size */
-    line-height: 1.6; /* Improved line height for readability */
-    color: #444; /* Dark gray for comfortable reading */
-    margin-top: 10px; /* Space above the story text */
-    text-align: justify; /* Justify text for a newspaper format */
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #444; 
+    margin-top: 10px;
+    text-align: justify; 
 }
 
 .story p {
-    margin: 10px 0; /* Space between paragraphs */
+    margin: 10px 0;
 }
 
 .loading-message {
-  color: #ffffff; /* White text */
-  font-weight: bold; /* Bold text */
-  font-size: 1.5rem; /* Adjust size as needed */
-  text-align: center; /* Center the text */
-  margin: 20px 0; /* Add spacing */
+  color: #ffffff; 
+  font-weight: bold; 
+  font-size: 1.5rem; 
+  text-align: center; 
+  margin: 20px 0; 
 }
 
-/* Input Field Styling for Food Waste Calculator */
+
 .form-group input {
   width: 100%;
   padding: 10px;
@@ -360,7 +359,7 @@ input {
 }
 
 input::placeholder {
-  color: #5864a2; /* Light color for placeholder text */
+  color: #5864a2; 
 }
 
 /* Receipt Section Styling */
@@ -423,7 +422,7 @@ input::placeholder {
 .impact-content {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between image and text */
+  gap: 20px; 
   justify-content: flex-start;
 }
 
@@ -435,14 +434,14 @@ input::placeholder {
 }
 
 .impact-image {
-  width: 170px; /* Adjust this width to your preferred size */
-  height: auto; /* Keeps the aspect ratio of the image */
+  width: 170px; 
+  height: auto; 
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Glow Effect and Animation for Environmental Impact Button */
+
 #calculateImpactButton {
   padding: 10px 20px;
   background: #4a7cbb;

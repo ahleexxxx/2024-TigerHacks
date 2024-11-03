@@ -11,7 +11,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background: linear-gradient(135deg, #ff8c00, #ffd700); /* Orange to yellow gradient */
+  background: linear-gradient(135deg, #ff8c00, #ffd700); 
   color: #000000;
 }
 
@@ -82,19 +82,19 @@ html {
   color: #fff;
 }
 
-/* Make timeline word color white only in Step 3 */
+
 .step3 .mini-timeline .mini-step {
-  color: white; /* Sets the text color to white */
+  color: white; 
 }
 
 .step3 .mini-timeline .mini-step.completed {
   background-color: #3a3f78;
-  color: #ffffff; /* Ensure completed step text is also white */
+  color: #ffffff; 
 }
 
 .step3 .mini-timeline .mini-step.active {
   background-color: #5864a2;
-  color: white; /* Ensure active step text is also white */
+  color: white; 
 }
 
 
@@ -109,18 +109,18 @@ html {
   margin: 0 auto;
 }
 
-/* Shadow and Border effect for left and right sections */
+
 .left-section, .right-section {
   width: 48%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  border: 2px solid #ff8c00; /* Border for left container */
+  border: 2px solid #ff8c00; 
 }
 
-/* Main Title Styling */
+
 .main-title {
   font-size: 4rem;
   font-weight: bold;
@@ -156,7 +156,7 @@ input, textarea {
   font-size: 1.1rem;
   background-color: #f0f8e2;
   color: #000000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for input and textarea */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); 
   transition: box-shadow 0.3s ease;
 }
 
@@ -169,12 +169,12 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .button-container {
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
+  justify-content: center; 
   gap: 10px;
 }
 
@@ -188,7 +188,7 @@ textarea:focus, input:focus {
   cursor: pointer;
   border: 2px solid #000000;
   transition: background 0.3s ease, border-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .calc-btn:hover {
@@ -196,7 +196,7 @@ textarea:focus, input:focus {
   border-color: #ff8c00;
 }
 
-/* Food Table Styling */
+
 .food-table-container h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
@@ -204,7 +204,7 @@ textarea:focus, input:focus {
   color: #000000;
   text-align: center;
   margin-bottom: 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for food table title */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 table {
@@ -212,7 +212,7 @@ table {
   border-collapse: collapse;
   margin-top: 10px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 th, td {
@@ -239,14 +239,14 @@ tr:hover {
   background-color: rgba(255, 140, 0, 0.2);
 }
 
-/* Nutrition Facts Styling */
+
 .nutrition-facts-container {
   font-size: 1.2rem;
   background-color: #f0cda9;
   color: #000000;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for nutrition container */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
   border: 2px solid #ff8c00;
 }
 
@@ -260,7 +260,7 @@ tr:hover {
   padding-bottom: 10px;
 }
 
-/* Step 3 - Futuristic Robotic Style for All Elements */
+
 .step3 * {
   font-family: 'Orbitron', sans-serif !important;
   color: #000000;
@@ -269,12 +269,12 @@ tr:hover {
 }
 
 .nutrition-title, .nutrition-section p {
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat for improved readability */
+  font-family: 'Montserrat', sans-serif;
   color: #000000;
 }
 
 .nutrition-title {
-  font-size: 3rem; /* Reduced font size for better balance */
+  font-size: 3rem; 
   font-weight: bold;
   text-align: left;
   margin-bottom: 10px;

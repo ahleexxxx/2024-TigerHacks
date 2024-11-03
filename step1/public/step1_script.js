@@ -78,11 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     generateButton.addEventListener("click", async () => {
-        // Display loading message with inline styles
+        
         newsContainer.innerHTML = '<p id="loadingMessage">Time Machine Loading...</p>';
         const loadingMessage = document.getElementById("loadingMessage");
         
-        // Apply inline styles
         loadingMessage.style.color = "#ffffff";
         loadingMessage.style.fontWeight = "bold";
         loadingMessage.style.fontSize = "1.5rem";

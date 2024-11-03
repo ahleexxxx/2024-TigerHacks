@@ -45,14 +45,14 @@ html {
   height: auto;
 }
 
-/* Header Logo Size for Step 2 */
+
 .step2 .header .brand {
-  width: 250px; /* Larger size for Step 2 */
+  width: 250px; 
   height: auto;
 }
 
 .step2 .header {
-  padding: 30px 0; /* Increase padding for a taller header in Step 2 */
+  padding: 30px 0; 
 }
 
 .mini-timeline {
@@ -258,7 +258,7 @@ input:focus {
   font-weight: bold;
 }
 
-/* Clock Container Styling */
+
 .clock-container {
   display: flex;
   flex-direction: column;
@@ -269,17 +269,17 @@ input:focus {
 
 /* Text Styling */
 .clock-text {
-  font-family: 'Orbitron', sans-serif; /* Example: A futuristic font */
-  font-size: 2.5rem; /* Adjust font size as needed */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #000000; /* Adjust color as desired */
-  margin-bottom: 15px; /* Space between text and clock */
+  color: #000000;
+  margin-bottom: 15px; 
   text-align: center;
-  letter-spacing: 1px; /* Slight spacing between letters for readability */
+  letter-spacing: 1px;
 }
 
-/* Clock Lottie Styling */
+
 .clock-container lottie-player {
-  width: 250px; /* Adjust width based on preference */
+  width: 250px; 
   height: 250px;
 }
