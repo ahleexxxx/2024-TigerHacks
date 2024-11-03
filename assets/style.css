@@ -1,0 +1,264 @@
+/* Basic Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #ff6bcb, #6c63ff, #48c6ef, #9c27b0, #ff8a65);
+  background-size: 600% 600%;
+  animation: vibrantLightningBackground 10s ease-in-out infinite;
+  color: #fff;
+  text-align: center;
+}
+@keyframes vibrantLightningBackground {
+  0% { background-position: 0% 50%; filter: brightness(1.4); }
+  25% { background-position: 25% 75%; filter: brightness(1.6); }
+  50% { background-position: 100% 50%; filter: brightness(1.8); }
+  75% { background-position: 75% 25%; filter: brightness(1.6); }
+  100% { background-position: 0% 50%; filter: brightness(1.4); }
+} */
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff6bcb, #6c63ff, #48c6ef, #9c27b0, #ff8a65);
+  background-size: 600% 600%;
+  animation: vibrantLightningBackground 10s ease-in-out infinite;
+  filter: brightness(1.4); /* Adjust the brightness here */
+  z-index: -1;
+}
+
+/* Remove the filter from @keyframes if it's only needed for background */
+@keyframes vibrantLightningBackground {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 25% 75%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 75% 25%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+/* Header */
+.header {
+  width: 100%;
+  background: #000000;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .brand {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.moving-car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px; /* Adjust the size as needed */
+  animation: moveCar 20s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+@keyframes moveCar {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(100vw - 100px)); /* Adjust 100px to the car's width */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px; /* Padding for fixed header */
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Vertical Line */
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background: #3a3f78;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1;
+}
+
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Adjust to position arrow correctly */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #3a3f78;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+
+/* Timeline Item */
+.timeline-item {
+  background: #2e3440;
+  border-radius: 15px;
+  padding: 25px;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  margin: 50px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+
+
+@keyframes float {
+  0% {
+      transform: translateY(-50%);
+  }
+  50% {
+      transform: translateY(-40%); /* Move up */
+  }
+  100% {
+      transform: translateY(-50%); /* Return to original position */
+  }
+}
+
+
+.timeline-image {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  filter: none; /* This removes any inherited filter effects */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: float 2s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+/* Position the image depending on odd/even item */
+.timeline-item:nth-child(odd) .timeline-image {
+  right: -250px; /* Adjust position to keep it aligned next to the connector line */
+}
+
+.timeline-item:nth-child(even) .timeline-image {
+  left: -250px; /* Adjust position for even items */
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-start;
+  margin-right: 55%;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  margin-left: 55%;
+}
+
+/* Connector Line from Timeline Line to Item */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 30px; 
+  height: 4px;
+  background-color: #3a3f78;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -30px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -30px;
+}
+
+/* Circle Indicator with Neon Glow */
+.timeline-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #f4ff81;
+  border: 4px solid #aaff00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translateX(-50%); */
+  top: 0;
+  box-shadow: 0px 0px 12px rgba(255, 255, 100, 0.7), 0px 0px 20px rgba(170, 255, 0, 0.7);
+  z-index: 2;
+}
+
+
+
+
+/* Timeline Content */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+/* Neon yellow-green gradient button with refined glow on hover */
+.timeline-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #131212;
+  background: linear-gradient(135deg, #f4ff81, #aaff00);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  background-size: 200%;
+  box-shadow: 0px 4px 12px rgba(250, 255, 0, 0.5);
+}
+
+.timeline-btn:hover {
+  background: linear-gradient(135deg, #ffffa1, #baff00);
+  color: #0d0d0d; /* Darker text on hover */
+  box-shadow: 0px 0px 20px rgba(255, 255, 100, 0.8), 0px 0px 25px rgba(0, 255, 108, 0.7);
+}
+
+/* Robotic-style description text */
+.timeline-description {
+  font-family: 'Orbitron', sans-serif; /* Use 'Roboto Mono' or any robotic font of your choice */
+  font-size: 1rem;
+  color: #e5f5c3;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  letter-spacing: 0.5px; /* Slightly spaced out letters for a robotic feel */
+}

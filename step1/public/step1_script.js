@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return data.story;
       } catch (error) {
           console.error("Error fetching story:", error);
-          return "An error occurred. Please try again later.";
+          return "A Gemini API key is required for the backend, but it has been omitted for security purposes. We will demonstrate this functionality in our demo.";
       }
   }
 
