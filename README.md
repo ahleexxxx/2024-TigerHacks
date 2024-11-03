@@ -1,4 +1,4 @@
-### Back To The Fridge
+# Back To The Fridge
 ## Inspiration
 Food waste is a serious environmental issue, causing significant harm to both the environment and agriculture. Ultimately, it comes back to affect us through the food we consume. "Back To The Fridge" was inspired by a playful parody of "Back To The Future" to spark interest while also raising awareness about the critical issue of future food waste. This project focuses on practical, immediate actions we can take today to make a difference. By helping users find recipes for soon-to-expire items in their fridge, the site turns potential waste into delicious meals, reducing food waste and promoting healthier eating. This motivation drove us to create a website that not only tackles food waste but also helps users stay healthy.
 
