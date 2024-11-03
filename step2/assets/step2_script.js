@@ -15,7 +15,7 @@ searchForm.addEventListener("submit", (e) => {
 
 async function fetchAPI() {
   const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=100`;
-  searchResultDiv.innerHTML = "<p>Loading recipes...</p>";
+  searchResultDiv.innerHTML = "<p>Let's get started!</p>";
   try {
     const response = await fetch(baseURL);
     if (!response.ok) throw new Error("Failed to fetch recipes");
