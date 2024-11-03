@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/fetch-story", async (req, res) => {
-  const apiKey = 'API_KEY'; // Replace with your actual API key
+  const apiKey = 'ADD_Gemini_API_KEY'; // Replace with your actual API key
   const genAI = new GoogleGenerativeAI(apiKey); // Pass the API key directly
 
   try {

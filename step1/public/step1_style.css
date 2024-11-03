@@ -259,16 +259,6 @@ input {
   background-color: #f0f8e2;
 }
 
-/* .calc-btn, .news-btn {
-  padding: 10px 20px;
-  background-color: #3a3f78;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-} */
-
 /* Receipt Styling */
 .receipt {
   background-color: #ffffff;
@@ -356,24 +346,142 @@ input {
   margin: 20px 0; /* Add spacing */
 }
 
-/* .news-result {
-  padding: 20px;
-  background-color: #f4f4f4;
+/* Input Field Styling for Food Waste Calculator */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #3a3f78;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #f0f8ff;
   color: #333;
-  font-family: "Georgia", serif;
-  border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-  display: none; 
-  max-width: 100%;
+  font-size: 1rem;
 }
 
-.news-result h1 {
-  font-size: 2rem;
+input::placeholder {
+  color: #5864a2; /* Light color for placeholder text */
+}
+
+/* Receipt Section Styling */
+.receipt {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e8f0ff;
+  border: 1px solid #3a3f78;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.receipt h2 {
+  font-size: 1.4rem;
+  color: #1d2a4d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.receipt ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.receipt li {
+  padding: 8px 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #1d2a4d;
+}
+
+/* Environmental Impact Results Section */
+#impactResults {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6f7ff;
+  border: 1px solid #3a3f78;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: "Courier New", monospace;
+  text-align: left;
+}
+
+#impactResults h3 {
+  font-size: 1.4rem;
+  color: #1d2a4d;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.impact-content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+  justify-content: flex-start;
+}
+
+#impactResults p {
+  font-size: 1.1rem;
+  margin: 5px 0;
   color: #333;
   text-align: center;
 }
 
-.news-result p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-} */
+.impact-image {
+  width: 170px; /* Adjust this width to your preferred size */
+  height: auto; /* Keeps the aspect ratio of the image */
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow Effect and Animation for Environmental Impact Button */
+#calculateImpactButton {
+  padding: 10px 20px;
+  background: #4a7cbb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(74, 124, 187, 0.6);
+  position: relative;
+  overflow: hidden;
+  animation: pulseGlow 3s infinite;
+}
+
+#calculateImpactButton:hover {
+  background: #6b9df5;
+  box-shadow: 0px 0px 15px rgba(107, 157, 245, 0.8), 0px 0px 20px rgba(107, 157, 245, 0.4);
+}
+
+/* Receipt Table Styling */
+#receiptTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#receiptTable th, #receiptTable td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#receiptTable th {
+  background-color: #f0f8ff;
+  color: #333;
+  font-weight: bold;
+}
+
+#receiptTable td {
+  color: #333;
+}
