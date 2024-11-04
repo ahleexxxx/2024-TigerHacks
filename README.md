@@ -26,7 +26,7 @@ This guide will walk you through the steps to run the full functionality of the 
    - Alternatively, you can download the ZIP file and extract it on your local machine.
 
 2. **Gemini API Key**:
-   - Obtain a Gemini API key from the [Gemini website](https://www.gemini.com/).
+   - Obtain a Gemini API key from the [Gemini website](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiZjsC5u8GJAxVDNtQBHe49NXcYABAAGgJvYQ&co=1&ase=2&gclid=Cj0KCQjwvpy5BhDTARIsAHSilynjQoMFITiWUKqky1CA1c1BH81VoHi3EhCjGifac6A2eSed0UtrRkoaAgExEALw_wcB&ohost=www.google.com&cid=CAESVuD2NbhPoyzNkzO3Mnmof0BNKLY1c5GcnMNjIhXbXGuNx9gKHco1sCCFqJfA_HCwWMBUzyMdaPVIE8TKK_NBxdYvpRAAfemm2S5Jn2d8KrtlNqmWGxwb&sig=AOD64_27Z5APsudLdS9L8KwY2ZEX4GcEMA&q&nis=4&adurl&ved=2ahUKEwi9oLy5u8GJAxXJ4skDHY2iC1YQ0Qx6BAgKEAE).
    - Once you have the key, open the file `step1/step1_server.js` and replace the following line:
      ```javascript
      const apiKey = 'ADD_Gemini_API_KEY'; // Replace with your actual API key
