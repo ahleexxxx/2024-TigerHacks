@@ -64,7 +64,7 @@ This guide will walk you through the steps to run the full functionality of the 
 This project utilizes resources from the following providers:
 
 - **[Edamam API](https://www.edamam.com/)**: Used for accessing nutrition and recipe information. 
-- **[Gemini API](https://www.gemini.com/)**: Used for future newspaper generator functionality.
+- **[Gemini API](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiZjsC5u8GJAxVDNtQBHe49NXcYABAAGgJvYQ&co=1&ase=2&gclid=Cj0KCQjwvpy5BhDTARIsAHSilynjQoMFITiWUKqky1CA1c1BH81VoHi3EhCjGifac6A2eSed0UtrRkoaAgExEALw_wcB&ohost=www.google.com&cid=CAESVuD2NbhPoyzNkzO3Mnmof0BNKLY1c5GcnMNjIhXbXGuNx9gKHco1sCCFqJfA_HCwWMBUzyMdaPVIE8TKK_NBxdYvpRAAfemm2S5Jn2d8KrtlNqmWGxwb&sig=AOD64_27Z5APsudLdS9L8KwY2ZEX4GcEMA&q&nis=4&adurl&ved=2ahUKEwi9oLy5u8GJAxXJ4skDHY2iC1YQ0Qx6BAgKEAE)**: Used for future newspaper generator functionality.
 - **[Canva](https://www.canva.com/)**: Used for creating images and designs used in this project.
 - **[Lottie Files](https://lottiefiles.com/)**: Used for images, GIF in the project.
 - **[Back to the Future Logo Generator]**: Used for generating the project logo with the Back to the Future font.
